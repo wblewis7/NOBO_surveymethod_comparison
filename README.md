@@ -101,7 +101,18 @@ A 5-D array of observed covey detections denoting whether or not each covey in M
 A Npoints x Nyear matrix of 1s for maximizing the contraint likelihood to ensure that expected abundance (lambda) is not greater than M.
 
 <br />
-We analyze trapping data using a SCR model with data augmentation. As with quadrats, we convert lambda to psi by dividing by M and This model estimates activity centers of captured and augmented individuals, and estimates detection probability at each trap based on the distance between the trap and the activity center. We used the 'nimbleSCR' package (Bischof et al. 2020. Wildlife Biology) to improve computational efficiency. Notably, we grid the trapping area into 50m cells and constrain activity centers to be within upland areas based on a mask of wetland areas developed based on FWC/FNAI 2023. Additionally, these functions only calculate detection probability for traps which could feasibly catch an individual. The furthest distance within a year between captures in ourdata was 422m, so we model traps >844m from activity centers as being unable to capture individuals. These functions also scale the x/y axes such that the origin is in the bottom-left at 0,0.
+
+## Analysis_NOBO_CFL_quadratSCR.R
+R and NIMBLE code for running the Bayesian hierarchical quadrat SCR model.
+
+
+<br>
+<br>
+
+----
+
+# Trapping SCR
+We analyze trapping data using a SCR model with data augmentation. As with quadrats, we calculate lambda via course and year effects and convert to psi by dividing by M. This model estimates activity centers of captured and augmented individuals, and estimates detection probability at each trap based on the distance between the trap and the activity center. We used the 'nimbleSCR' package (Bischof et al. 2020. Wildlife Biology) to improve computational efficiency. Notably, we grid the trapping area into 50m cells and constrain activity centers to be within upland areas based on a mask of wetland areas developed based on FWC/FNAI 2023. Additionally, these functions only calculate detection probability for traps which could feasibly catch an individual. The furthest distance within a year between captures in our data was 422m, so we model traps >844m from activity centers as being unable to capture individuals. These functions also scale the x/y axes such that the origin is in the bottom-left at 0,0.
 <br />
 We provide formatted point count, quadrat, and trapping data, as well as R and NIMBLE code to analyze the data.
 
