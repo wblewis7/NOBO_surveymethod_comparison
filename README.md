@@ -151,7 +151,7 @@ A 3-D array giving the total number of traps run at each course (2nd dimension),
 ### trials 
 A 4-D array giving the total number of trapping occasions for each trap. Dimension correspond to the maximum number of traps across courses/years (1st dimension), courses (2nd dimension), years (3rd dimension), and properties (4th dimension).
 ### sigindex 
-A 3-D array indexing the detection process at courses (2nd dimension), years (1st dimension), and properties (3rd dimension). Supplemental food was generally restricted ~10 days before trapping, but this was increased to ~20 days before trapping for courses 1 and 3 at the first property. Modeling separate effects on the detection process (g0 and sigma) based on whether or not food was restricted 20 (1) or 10 (2) days before trapping.
+A 3-D array indexing the detection process at courses (2nd dimension), years (1st dimension), and properties (3rd dimension). Supplemental food was generally restricted ~10 days before trapping, but this was increased to ~20 days before trapping for Courses 1 and 3 at the first property. Modeling separate effects on the detection process (g0 and sigma) based on whether or not food was restricted 20 (1) or 10 (2) days before trapping.
 ### detector.xy 
 A 5-D array giving the x and y coordinates (1st and 2nd elements, respectively, of 2nd dimension) in 50x50m grid cells of traps (1st dimension). 3rd dimension is course, 4th dimension is year, and 5th dimension is property. NA values correspond to traps beyond the number of traps (n.detectors) at a given course/year.
 ### n.cells 
