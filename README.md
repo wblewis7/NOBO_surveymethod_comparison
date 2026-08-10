@@ -26,7 +26,7 @@ was run for ~ 7.5 (1 - 9) occasions. Upon capture, birds were banded with a uniq
 ----
 
 # Point Count
-We model point count data via the hierarchical distance-sampling models of Royle et al. (2004, Ecology) with modifications to account for repeat surveys (Lewis et al. 2025. Ecological Solutions and Evidence). We model expected abundance via effects of survey course and year, and model the distance of detections based on a half-normal detection function. Not that this model estimates covey abundance at sampling units, which we convert to individual abundance via an average covey size of 12 birds/covey.
+We model point count data via the hierarchical distance-sampling models of Royle et al. (2004, Ecology) with modifications to account for repeat surveys (Lewis et al. 2025. Ecological Solutions and Evidence). We model expected abundance via effects of survey course and year. We bin detections into 5 distance bins (0-50 m, 50-100 m, 100-200 m, 200-350 m, and 350-500 m)and model detections within bins based on a half-normal detection function. Note that this model estimates covey abundance at sampling units, which we convert to individual abundance via an average covey size of 12 birds/covey.
 <br>
 ## NOBO_CFL_modeldata_pointcount.gzip
 Formatted data for estimating abundance from the point count dataset are provided in "NOBO_CFL_modeldata_pointcount.gzip".
@@ -37,9 +37,9 @@ The total number of survey years (2).
 ### Nvisits
 The number of repeat surveys performed at each survey point in each year (2).
 ### y 
-A 3-D array giving the total number of coveys detected at each point (1st dimension), repeat surveys (2nd dimension), and year (3rd dimension).
+A 3-D array giving the total number of coveys detected at each point (1st dimension), repeat survey (2nd dimension), and year (3rd dimension).
 ### ydb
-A 4-D array giving the number of covey detections at each point (1st dimension), in each distance bin (2nd dimension), repeat surveys (3rd dimension), and year (4th dimension).
+A 4-D array giving the number of covey detections at each point (1st dimension), in each distance bin (2nd dimension), repeat survey (3rd dimension), and year (4th dimension).
 ### nB
 The total number of distance bins for distance sampling (5).
 ### db
