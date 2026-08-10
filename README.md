@@ -17,7 +17,7 @@ point counts. Second, covey abundance was surveyed at the sampling units via the
 detection of each unique covey detected. Observers reconciled observations after surveys, identifying the number of unique coveys detected and which coveys were detected by which observer. Both point counts and quadrat surveys occurred
 from 45-minutes prior to sunrise until sunrise and were repeated twice per year. Lastly, individual abundance was surveyed via trapping spatial capture-recapture (SCR). We deployed baited walk-in traps in a 4x4 array, spaced 150m apart, at each sampling unit. Each trap
 was run for ~ 7.5 (1 - 9) occasions. Upon capture, birds were banded with a uniquely-numbered aluminum leg band and released. Supplemental feeding at the properties was generally restricted ~10 days prior to trapping, though two courses had feed withheld
-~20 days prior to trapping. Each of the three datasets was analyzed via a Bayesian framework via NIMBLE in R. 
+~20 days prior to trapping. Each of the three datasets was analyzed via a Bayesian framework with NIMBLE in R. 
 
 <br>
 <br>
