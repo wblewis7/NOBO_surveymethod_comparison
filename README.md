@@ -1,4 +1,4 @@
-# NOBO_surveymethod_comparison
+# NOBO_densityestimator_comparison
 Formatted data and R/NIMBLE code for performing Bayesian hierarchical analyses estimating fall density of northern bobwhite (Colinus virginianus) in central Florida, USA, via point counts, multi-observer SCR quadrat surveys, and trapping SCR
 ---
 Authors: Robin L. Schmitt, William B. Lewis, Amanda S. Cramer, Geoff Beane, and James A. Martin
