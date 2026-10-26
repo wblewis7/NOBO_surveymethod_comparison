@@ -14,10 +14,12 @@ Contact: William B. Lewis, University of Georgia, william.lewis27@uga.edu
 Northern bobwhite abundance was surveyed during the falls (October - November) of 2021/2022 at two study properties in central Florida, USA. Properties were divided into 6 total survey courses (4 at Property 1, 2 at Property 2).
 Data were surveyed at 19 500x500m sampling units (2 - 4 sampling units per survey course) via three different surveys methods. First, covey abundance was surveyed from the center of each sampling unit via 500m fixed-radius, distance-sampling
 point counts. Second, covey abundance was surveyed at the sampling units via the multi-observer quadrat method. Four observers stood at the mid-points of the edges of the sampling unit and recorded the location and time of 
-detection of each unique covey detected. Observers reconciled observations after surveys, identifying the number of unique coveys detected and which coveys were detected by which observer. Both point counts and quadrat surveys occurred
-from 45-minutes prior to sunrise until sunrise and were repeated twice per year. Lastly, individual abundance was surveyed via trapping spatial capture-recapture (SCR). We deployed baited walk-in traps in a 4x4 array, spaced 150m apart, at each sampling unit. Each trap
+detection of each unique covey detected. Observers reconciled observations after surveys, identifying the number of unique coveys detected within the 25ha survey area and which coveys were detected by which observer. Both point counts and quadrat surveys occurred
+from 45-minutes prior to sunrise until sunrise and were repeated twice per year. Lastly, individual abundance was surveyed via trapping spatial capture-recapture (SCR). We deployed baited walk-in traps in a 4x4 array, spaced ~150m apart, at each sampling unit. Each trap
 was run for ~ 7.5 (1 - 9) occasions. Upon capture, birds were banded with a uniquely-numbered aluminum leg band and released. Supplemental feeding at the properties was generally restricted ~10 days prior to trapping, though two courses had feed withheld
-~20 days prior to trapping. Each of the three datasets was analyzed via a Bayesian framework with NIMBLE in R. 
+~20 days prior to trapping. 
+As an independent measure of relative changes in abundance between years, we kept detailed records of covey encounter rates on hunts during the hunting seasons starting in 2021 and 2022 at Property 1. The hunting party consisted of two shooters and two dog handlers, plus an independent observer. The observer recorded the number of coveys encountered, the hunt duration (not including time spent changing dogs), and the average temperature (C) during the hunt.
+Each of the four datasets was analyzed via a Bayesian framework with NIMBLE in R. 
 
 <br>
 <br>
