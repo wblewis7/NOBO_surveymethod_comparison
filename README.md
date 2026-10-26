@@ -179,3 +179,30 @@ A 3-D array of 1s for maximizing the constraint likelihood to ensure that expect
 
 ## Analysis_NOBO_CFL_trappingratSCR.R
 R and NIMBLE code for running the Bayesian hierarchical trapping SCR model.
+
+
+<br>
+<br>
+
+----
+
+# Hunting Encounter Rates
+We model the number of coveys encountered per hunt via a Poisson generalized linear model. We include effects of hunting season (2021/2022 vs. 2022/2023) and temperature (standardized) on the expected number of coveys encountered, plus an offset of log-transformed hunt duration to account for differing survey duration. We do not model course effects on covey encounters due to insufficient sample sizes (i.e., <10 hunts on some courses). We model effects of temperature because previous research has found covey activity and encounter rates to be lower in cooler temperatures. Hunting methods were largely consistent across years, including using the same independent observer. As such, we interpret year effects on covey encounter rates as reflective of changes in abundance between years.
+<br>
+## NOBO_CFL_modeldata_huntingencounters.gzip
+Formatted data for estimating hunting encounter rates are provided in "NOBO_CFL_modeldata_huntingencounters.gzip".
+### Encounters
+The number of coveys encountered on each hunt.
+### Nunt
+The total number of hunts (48).
+### year
+The year of the hunting season associated with each hunt in Nhunt. Values of 0 correspond to the 2021/2022 hunting season while values of 1 correspond to the 2022/2023 season.
+### temp
+The average temperature (standardized) during each hunt in Nhunt.
+### loghours
+The hunt duration in log-transformed hours of each hunt in Nhunt.
+
+<br />
+
+## Analysis_NOBO_CFL_huntingencounters.R
+R and NIMBLE code for running the Bayesian glm hunting encounter rate model.
