@@ -41,7 +41,6 @@ str(data.huntingencounters)
 #   2022/2023 season.
 # temp gives the average temperature (standardized) during each hunt in Nhunt.
 # loghours gives the hunt duration in log-transformed hours of each hunt in Nhunt.
-# Nvisits gives the number of repeat surveys performed at each sampling unit in each year (2).
 
 
 
